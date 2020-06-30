@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Uva" representedClassName=".Uva" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vinhos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vinho" syncable="YES"/>
+    </entity>
+    <entity name="Vinho" representedClassName=".Vinho" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pais" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vinicola" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Vinho" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Uva" positionX="-101" positionY="204" width="128" height="88"/>
+    </elements>
+</model>
